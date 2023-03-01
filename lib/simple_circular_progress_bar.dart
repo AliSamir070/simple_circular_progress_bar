@@ -209,7 +209,7 @@ class _SimpleCircularProgressBarState extends State<SimpleCircularProgressBar>
 
         // Read [MAIN LOGIC]
         if (value < animationController.value) {
-          animationController.forward();
+          animationController.reset();
         } else {
           animationController.animateTo(value);
         }
